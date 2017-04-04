@@ -18,14 +18,19 @@
 */
 
 using System;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-[assembly: AssemblyCompany("Omega software")]
-[assembly: AssemblyCopyright("Copyright (C) Omega software 2017")]
-[assembly: AssemblyTrademark("")]
-
-[assembly: AssemblyVersion("1.8.0")]
-[assembly: AssemblyFileVersion("1.8.0")]
-[assembly: AssemblyInformationalVersion("1.8.0-dev")]
+namespace Rhetos.Utilities
+{
+    class SqlProviderManifest
+    {
+        internal const string TokenSql8 = "2000";
+        internal const string TokenSql9 = "2005";
+        internal const string TokenSql10 = "2008";
+        internal const string TokenSql11 = "2012";
+        internal const string TokenAzure11 = "2012.Azure";
+    }
+}

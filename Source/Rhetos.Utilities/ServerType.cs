@@ -18,14 +18,16 @@
 */
 
 using System;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-[assembly: AssemblyCompany("Omega software")]
-[assembly: AssemblyCopyright("Copyright (C) Omega software 2017")]
-[assembly: AssemblyTrademark("")]
-
-[assembly: AssemblyVersion("1.8.0")]
-[assembly: AssemblyFileVersion("1.8.0")]
-[assembly: AssemblyInformationalVersion("1.8.0-dev")]
+namespace Rhetos.Utilities
+{
+    public enum ServerType
+    {
+        OnPremises,
+        Cloud,
+    }
+}
